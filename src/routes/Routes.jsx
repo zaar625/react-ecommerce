@@ -12,7 +12,8 @@ const Routers = () => {
     <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/catalog/:slug' element={<Product />} />
-        <Route path='/catalog' element={<Catalog />} />
+        <Route path='/catalog' element={<Catalog />}>
+        </Route>
         <Route path='/cart' element={<Cart />} />
     </Routes>
   )
