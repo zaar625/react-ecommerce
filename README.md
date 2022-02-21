@@ -36,3 +36,5 @@ flex-grow CSS property 는 flex-item 요소가, flex-container 요소 내부에�
 9.products.find(e => e.slug === slug)
 
 10.text-align: justify; 양쪽 정렬
+
+11. productViewModal/productview/redux 이해 필요

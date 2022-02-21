@@ -5,7 +5,7 @@ const Button = props => {
 
     const bg = props.backgroundColor ? 'bg-' + props.backgroundColor : 'bg-main'
 
-    const size = props.size ? 'btn' + props.size : ''
+    const size = props.size ? 'btn-' + props.size : ''
 
     const animate = props.animate ? 'btn-animate' : ''
 
