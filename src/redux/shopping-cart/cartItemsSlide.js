@@ -35,6 +35,7 @@ export const cartItemsSlice = createSlice({
         updateItem: (state, action) => {
             const newItem = action.payload
             const item = state.value.filter(e => e.slug === newItem.slug && e.color === newItem.color && e.size === newItem.size)
+            
             if (item.length > 0) {
                 state.value = state.value.filter(e => e.slug !== newItem.slug || e.color !== newItem.color || e.size !== newItem.size)
                 state.value = [...state.value, {
@@ -46,7 +47,8 @@ export const cartItemsSlice = createSlice({
                     quantity: newItem.quantity
                 }]
             }
-            localStorage.setItem('cartItems', JSON.stringify(state.value.sort((a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0))))
+            // localStorage.setItem('cartItems', JSON.stringify(state.value.sort((a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0))))
+            localStorage.setItem('cartItems', JSON.stringify(state.value))
         },
         removeItem: (state, action) => {
             const item = action.payload

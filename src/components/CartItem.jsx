@@ -8,11 +8,13 @@ import numberWithCommas from '../utils/numberWithCommas'
 import { Link } from 'react-router-dom'
 
 const CartItem = props => {
-
+    
     const dispatch = useDispatch()
 
     const[item, setItem] = useState(props.item)
     const[quantity, setQuantity] = useState(props.item.quantity)
+ 
+    console.log(item)
 
     useEffect(() => {
         setItem(props.item)

@@ -170,7 +170,7 @@ const Caltalog = () => {
         </div>
         <div className='catalog__filter__toggle'>
             <Button size='sm' onClick={() => showHideFilter() }>필터</Button>
-          </div>
+        </div>
         <div className='catalog__content'>
           <InfinityLsit
             data={products}

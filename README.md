@@ -38,3 +38,5 @@ flex-grow CSS property 는 flex-item 요소가, flex-container 요소 내부에�
 10.text-align: justify; 양쪽 정렬
 
 11. productViewModal/productview/redux 이해 필요
+
+12.sort() 메서드는 배열의 요소를 적절한 위치에 정렬한 후 그 배열을 반환합니다

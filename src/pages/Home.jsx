@@ -31,7 +31,7 @@ const Home = () => {
         <SectionBody>
             <Grid
                 col={4}
-                mdCol={2}
+                mdCol={3}
                 smCol={1}
                 gap={20}
             >
@@ -52,7 +52,7 @@ const Home = () => {
       {/* best selling section */}
       <Section>
         <SectionTitle>
-            top sản phẩm bán chạy trong tuần
+        best selling 
         </SectionTitle>
         <SectionBody>
             <Grid
